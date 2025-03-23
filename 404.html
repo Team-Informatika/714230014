@@ -19,20 +19,21 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
             text-align: center;
         }
 
         .error-container {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             padding: 2rem;
             border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
             max-width: 500px;
             width: 90%;
             animation: fadeIn 0.5s ease-out;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         @keyframes fadeIn {
@@ -50,32 +51,34 @@
             font-size: 8rem;
             font-weight: bold;
             margin-bottom: 1rem;
-            background: linear-gradient(45deg, #fff, #e0e0e0);
+            background: linear-gradient(45deg, #ffffff, #e0e0e0);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         .error-message {
             font-size: 1.5rem;
             margin-bottom: 2rem;
+            font-weight: 600;
         }
 
         .error-description {
             font-size: 1.1rem;
             margin-bottom: 2rem;
             opacity: 0.9;
+            line-height: 1.6;
         }
 
         .home-button {
             display: inline-flex;
             align-items: center;
             padding: 1rem 2rem;
-            background: white;
-            color: #667eea;
+            background: #ffffff;
+            color: #000000;
             text-decoration: none;
             border-radius: 50px;
-            font-weight: bold;
+            font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
@@ -99,13 +102,19 @@
         }
 
         .contact-info a {
-            color: white;
+            color: #ffffff;
             text-decoration: none;
             margin: 0 10px;
+            transition: opacity 0.3s ease;
         }
 
         .contact-info a:hover {
+            opacity: 1;
             text-decoration: underline;
+        }
+
+        .contact-info i {
+            margin-right: 5px;
         }
     </style>
 </head>
